@@ -1,0 +1,35 @@
+[package]
+name = "rust_kafka"
+version = "0.1.0"
+edition = "2024"
+
+# Deskripsi 
+description = "Simple Kafka Producer and Consumer in Rust (pure-Rust client)"
+authors = ["Andrian Tri Putra"]
+license = "Apache"
+
+[dependencies]
+# Pure Rust Kafka client
+kafka = "0.10"
+
+# Error handling elegan
+anyhow = "1.0"
+
+# Logging sederhana
+env_logger = "0.11"
+log = "0.4"
+
+# Untuk argument parsing ringan
+clap = { version = "4.5", features = ["derive"] }
+
+# (opsional) jika nanti mau async version
+# tokio = { version = "1.40", features = ["full"], optional = true }
+
+# Untuk menghasilkan angka acak
+rand = "0.8"
+
+# Library waktu dan tanggal (timestamp, format, durasi)
+chrono = "0.4"
+
+# Untuk membaca variabel (.env) 
+dotenvy = "0.15"
